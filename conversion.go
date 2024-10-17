@@ -12,8 +12,8 @@ func main() {
 	fmt.Println(nilai8)
 
 	var name = "Rizky"
-	var e byte = name[0]
-	var eString string = string(e)
+	var e byte = name[0] // fungsinya untuk membuat string dalam variabel name ini diubah menjadi byte
+	var eString string = string(e) // mengubah byte ke string
 
 	fmt.Println(name)
 	fmt.Println(eString)
