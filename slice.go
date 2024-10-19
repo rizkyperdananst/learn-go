@@ -32,6 +32,24 @@ func main() {
 	slice1[0] = "Mei Lagi"
 	fmt.Println(months)
 
+	var slice2 = months[8:]
+	fmt.Println(slice2)
+
+	var slice3 = append(slice2, "Rizky")
+	fmt.Println(slice3)
+	slice3[1] = "Bukan Desember"
+	fmt.Println(slice3)
+
+	fmt.Println(slice2)
+	fmt.Println(months)
+
+	newSlice := make([]string, 2, 5) // make([]string, length, capacity)
+
+	newSlice[0] = "Rizky"
+	newSlice[1] = "Perdana"
+
+	fmt.Println(newSlice)
+
 	// len(slice) = untuk mendapatkan panjang slice
 	// cap(slice) = untuk mendapatkan kapasitas slice
 	// append(slice, data) = untuk menambahkan slice baru dengan menambahkan data ke posisi terkahir slice, jika kapasitas sudah penuh maka akan membuat slice baru
